@@ -2,8 +2,6 @@ package constant
 
 import (
 	"net"
-
-	"github.com/gofrs/uuid"
 )
 
 type PlainContext interface {
@@ -12,8 +10,6 @@ type PlainContext interface {
 
 type ConnContext interface {
 	PlainContext
-	Metadata() *Metadata
-	Conn() net.Conn
 }
 
 type PacketConnContext interface {
